@@ -46,3 +46,16 @@ entry = tkinter.Entry(root, width=50)
 entry.pack(pady=30)
 decrypt_button = tkinter.Button(root, text="Decrypt", command=decrypt_text, bg='#ffffff', fg='#000000')
 decrypt_button.pack()
+
+#Label
+output_label = tkinter.Label(root, text="")
+output_label.pack(pady=10)
+output_label['bg'] = 'orange'
+
+
+img_label = tkinter.Label(root)
+img_label.pack()
+img_label['bg'] = 'pink'
+
+
+root.mainloop()
