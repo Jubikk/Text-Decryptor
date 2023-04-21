@@ -34,4 +34,15 @@ def decrypt_text():
     root.after(1000, lambda:output_label.config(img_label.config(image=photo)))
     img_label.image = photo
 
+#tkinter
+root = tkinter.Tk()
+root.title("Text Decryption by Joebeck Andrew F. Gusi")
+root.geometry()
+root['bg'] = 'cyan'
 
+
+#input and button
+entry = tkinter.Entry(root, width=50)
+entry.pack(pady=30)
+decrypt_button = tkinter.Button(root, text="Decrypt", command=decrypt_text, bg='#ffffff', fg='#000000')
+decrypt_button.pack()
